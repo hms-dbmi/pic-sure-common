@@ -11,7 +11,7 @@
     <version>3.0.0-SNAPSHOT</version>
   </parent>
 
-  <name>client-api</name>
+  <name>pic-sure-hpds-model</name>
   <url>https://avillach-lab.hms.harvard.edu/pic-sure</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
