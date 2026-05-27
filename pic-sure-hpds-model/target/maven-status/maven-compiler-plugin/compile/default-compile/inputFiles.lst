@@ -1,0 +1,14 @@
+/Users/ryan/dev/pic-sure-common/pic-sure-hpds-model/src/main/java/edu/harvard/hms/dbmi/avillach/hpds/data/query/v3/PhenotypicFilterType.java
+/Users/ryan/dev/pic-sure-common/pic-sure-hpds-model/src/main/java/edu/harvard/hms/dbmi/avillach/hpds/data/query/Filter.java
+/Users/ryan/dev/pic-sure-common/pic-sure-hpds-model/src/main/java/edu/harvard/hms/dbmi/avillach/hpds/data/query/v3/PhenotypicFilter.java
+/Users/ryan/dev/pic-sure-common/pic-sure-hpds-model/src/main/java/edu/harvard/hms/dbmi/avillach/hpds/data/genomic/VariantUtils.java
+/Users/ryan/dev/pic-sure-common/pic-sure-hpds-model/src/main/java/edu/harvard/hms/dbmi/avillach/hpds/data/query/v3/PhenotypicSubquery.java
+/Users/ryan/dev/pic-sure-common/pic-sure-hpds-model/src/main/java/edu/harvard/hms/dbmi/avillach/hpds/data/query/v3/Query.java
+/Users/ryan/dev/pic-sure-common/pic-sure-hpds-model/src/main/java/edu/harvard/hms/dbmi/avillach/hpds/data/query/v3/PhenotypicClause.java
+/Users/ryan/dev/pic-sure-common/pic-sure-hpds-model/src/main/java/edu/harvard/hms/dbmi/avillach/hpds/data/query/QueryDecorator.java
+/Users/ryan/dev/pic-sure-common/pic-sure-hpds-model/src/main/java/edu/harvard/hms/dbmi/avillach/hpds/data/query/Query.java
+/Users/ryan/dev/pic-sure-common/pic-sure-hpds-model/src/main/java/edu/harvard/hms/dbmi/avillach/hpds/data/query/v3/AuthorizationFilter.java
+/Users/ryan/dev/pic-sure-common/pic-sure-hpds-model/src/main/java/edu/harvard/hms/dbmi/avillach/hpds/data/query/translation/QueryTranslator.java
+/Users/ryan/dev/pic-sure-common/pic-sure-hpds-model/src/main/java/edu/harvard/hms/dbmi/avillach/hpds/data/query/v3/GenomicFilter.java
+/Users/ryan/dev/pic-sure-common/pic-sure-hpds-model/src/main/java/edu/harvard/hms/dbmi/avillach/hpds/data/query/ResultType.java
+/Users/ryan/dev/pic-sure-common/pic-sure-hpds-model/src/main/java/edu/harvard/hms/dbmi/avillach/hpds/data/query/v3/Operator.java

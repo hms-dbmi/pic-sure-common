@@ -1,0 +1,13 @@
+edu/harvard/dbmi/avillach/util/exception/ResourceCommunicationException.class
+edu/harvard/dbmi/avillach/domain/QueryFormat.class
+edu/harvard/dbmi/avillach/domain/ResourceInfo.class
+edu/harvard/dbmi/avillach/domain/PaginatedSearchResult.class
+edu/harvard/dbmi/avillach/domain/SignedUrlResponse.class
+edu/harvard/dbmi/avillach/QueryFormatDeserializer.class
+edu/harvard/dbmi/avillach/domain/QueryRequest.class
+edu/harvard/dbmi/avillach/domain/SearchResults.class
+edu/harvard/dbmi/avillach/domain/PicSureStatus.class
+edu/harvard/dbmi/avillach/domain/FederatedQueryRequest.class
+edu/harvard/dbmi/avillach/util/UUIDv5.class
+edu/harvard/dbmi/avillach/domain/QueryStatus.class
+edu/harvard/dbmi/avillach/domain/GeneralQueryRequest.class

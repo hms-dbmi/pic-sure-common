@@ -1,0 +1,13 @@
+/Users/ryan/dev/pic-sure-common/pic-sure-api-model/src/main/java/edu/harvard/dbmi/avillach/QueryFormatDeserializer.java
+/Users/ryan/dev/pic-sure-common/pic-sure-api-model/src/main/java/edu/harvard/dbmi/avillach/domain/FederatedQueryRequest.java
+/Users/ryan/dev/pic-sure-common/pic-sure-api-model/src/main/java/edu/harvard/dbmi/avillach/domain/GeneralQueryRequest.java
+/Users/ryan/dev/pic-sure-common/pic-sure-api-model/src/main/java/edu/harvard/dbmi/avillach/domain/PaginatedSearchResult.java
+/Users/ryan/dev/pic-sure-common/pic-sure-api-model/src/main/java/edu/harvard/dbmi/avillach/domain/PicSureStatus.java
+/Users/ryan/dev/pic-sure-common/pic-sure-api-model/src/main/java/edu/harvard/dbmi/avillach/domain/QueryFormat.java
+/Users/ryan/dev/pic-sure-common/pic-sure-api-model/src/main/java/edu/harvard/dbmi/avillach/domain/QueryRequest.java
+/Users/ryan/dev/pic-sure-common/pic-sure-api-model/src/main/java/edu/harvard/dbmi/avillach/domain/QueryStatus.java
+/Users/ryan/dev/pic-sure-common/pic-sure-api-model/src/main/java/edu/harvard/dbmi/avillach/domain/ResourceInfo.java
+/Users/ryan/dev/pic-sure-common/pic-sure-api-model/src/main/java/edu/harvard/dbmi/avillach/domain/SearchResults.java
+/Users/ryan/dev/pic-sure-common/pic-sure-api-model/src/main/java/edu/harvard/dbmi/avillach/domain/SignedUrlResponse.java
+/Users/ryan/dev/pic-sure-common/pic-sure-api-model/src/main/java/edu/harvard/dbmi/avillach/util/UUIDv5.java
+/Users/ryan/dev/pic-sure-common/pic-sure-api-model/src/main/java/edu/harvard/dbmi/avillach/util/exception/ResourceCommunicationException.java
