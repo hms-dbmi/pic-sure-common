@@ -12,7 +12,9 @@ public class PaginatedSearchResult<T> {
     private final int total;
 
     @JsonCreator
-    public PaginatedSearchResult(@JsonProperty("results") List<T> results, @JsonProperty("page") int page, @JsonProperty("total") int total) {
+    public PaginatedSearchResult(
+        @JsonProperty("results") List<T> results, @JsonProperty("page") int page, @JsonProperty("total") int total
+    ) {
         this.results = results;
         this.page = page;
         this.total = total;

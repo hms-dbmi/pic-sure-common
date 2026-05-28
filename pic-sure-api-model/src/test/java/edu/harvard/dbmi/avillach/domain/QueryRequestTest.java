@@ -53,7 +53,8 @@ public class QueryRequestTest {
 
     @Test
     public void shouldSerializeRequestWithNoTypeWithGICFields() throws JsonProcessingException {
-        String json = "{\"resourceCredentials\":{},\"query\":null,\"resourceUUID\":\"716d744f-9c89-40af-b572-222c1b20848f\",\"commonAreaUUID\":\"a79e3da0-e1fa-4626-9873-41cffd5e9115\",\"institutionOfOrigin\":\"Top secret institution (shh!)\"}";
+        String json =
+            "{\"resourceCredentials\":{},\"query\":null,\"resourceUUID\":\"716d744f-9c89-40af-b572-222c1b20848f\",\"commonAreaUUID\":\"a79e3da0-e1fa-4626-9873-41cffd5e9115\",\"institutionOfOrigin\":\"Top secret institution (shh!)\"}";
         QueryRequest actual = mapper.readValue(json, QueryRequest.class);
 
         // This is for backwards compatibility. An un-updated client should handle unknown fields gracefully
@@ -62,7 +63,8 @@ public class QueryRequestTest {
 
     @Test
     public void shouldSerializeRequestWithGICTypeAndExtraField() throws JsonProcessingException {
-        String json = "{\"@type\":\"FederatedQueryRequest\",\"madeUpField\":0,\"resourceCredentials\":{},\"query\":null,\"resourceUUID\":\"716d744f-9c89-40af-b572-222c1b20848f\",\"commonAreaUUID\":\"a79e3da0-e1fa-4626-9873-41cffd5e9115\",\"institutionOfOrigin\":\"Top secret institution (shh!)\"}";
+        String json =
+            "{\"@type\":\"FederatedQueryRequest\",\"madeUpField\":0,\"resourceCredentials\":{},\"query\":null,\"resourceUUID\":\"716d744f-9c89-40af-b572-222c1b20848f\",\"commonAreaUUID\":\"a79e3da0-e1fa-4626-9873-41cffd5e9115\",\"institutionOfOrigin\":\"Top secret institution (shh!)\"}";
         QueryRequest actual = mapper.readValue(json, QueryRequest.class);
 
         // This is for backwards compatibility.
