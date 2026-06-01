@@ -13,8 +13,8 @@
 		<module>pic-sure-hpds-model</module>
     </modules>
 	<properties>
-		<maven.compiler.release>24</maven.compiler.release>
-		<java.version>24</java.version>
+		<maven.compiler.release>25</maven.compiler.release>
+		<java.version>25</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<dockerfile-maven-version>1.4.10</dockerfile-maven-version>
 		<aws.version>2.20.153</aws.version>
@@ -78,7 +78,7 @@
 					<version>3.14.0</version>
 					<configuration>
 						<!--this is the target Java version-->
-						<release>24</release>
+						<release>25</release>
 					</configuration>
 				</plugin>
 				<plugin>
