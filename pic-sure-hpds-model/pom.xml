@@ -14,7 +14,7 @@
   <url>https://avillach-lab.hms.harvard.edu/pic-sure</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.release>24</maven.compiler.release>
+    <maven.compiler.release>25</maven.compiler.release>
   </properties>
   <dependencies>
     <dependency>
