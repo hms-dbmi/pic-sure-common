@@ -4,6 +4,7 @@ import edu.harvard.hms.dbmi.avillach.hpds.data.query.ResultType;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
 
@@ -74,5 +75,13 @@ public record Query(
             return this;
         }
         return new Query(select, authorizationFilters, phenotypicClause, genomicFilters, expectedResultType, picsureId, UUID.randomUUID());
+    }
+
+    public List<String> getUserConsents() {
+        return authorizationFilters.stream()
+                .filter(authorizationFilter -> authorizationFilter.conceptPath().equals("_consents"))
+                .map(AuthorizationFilter::values)
+                .flatMap(Collection::stream)
+                .toList();
     }
 }
