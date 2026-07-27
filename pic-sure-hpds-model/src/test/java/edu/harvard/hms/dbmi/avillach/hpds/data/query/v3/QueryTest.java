@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.UUID;
 
+import static edu.harvard.hms.dbmi.avillach.hpds.data.query.v3.Query.CONSENTS_AUTHORIZATION_FILTER_NAME;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class QueryTest {
@@ -97,5 +98,35 @@ public class QueryTest {
 
         query = query.generateId();
         assertEquals(uuid, query.id());
+    }
+
+    @Test
+    public void getUSerConsents_nullAuthFilters_returnEmpty() {
+        Query query = new Query(List.of("PATIENT_ID"), null, null, List.of(), ResultType.COUNT, null, null);
+        assertTrue(query.getUserConsents().isEmpty());
+    }
+
+    @Test
+    public void getUSerConsents_noAuthFilters_returnEmpty() {
+        Query query = new Query(List.of("PATIENT_ID"), List.of(), null, List.of(), ResultType.COUNT, null, null);
+        assertTrue(query.getUserConsents().isEmpty());
+    }
+
+    @Test
+    public void getUSerConsents_nullConsentAuthFilters_returnEmpty() {
+        Query query = new Query(List.of("PATIENT_ID"), List.of(new AuthorizationFilter(null, Set.of())), null, List.of(), ResultType.COUNT, null, null);
+        assertTrue(query.getUserConsents().isEmpty());
+    }
+
+    @Test
+    public void getUSerConsents_validConsentAuthFilters_returnAll() {
+        List<AuthorizationFilter> testAuthFilters = List.of(
+                new AuthorizationFilter(CONSENTS_AUTHORIZATION_FILTER_NAME, Set.of("consent1", "consent2")),
+                new AuthorizationFilter("_not" + CONSENTS_AUTHORIZATION_FILTER_NAME, Set.of("consent3")),
+                new AuthorizationFilter(CONSENTS_AUTHORIZATION_FILTER_NAME, Set.of("consent2", "consent4")),
+                new AuthorizationFilter(null, Set.of("consent4", "consent5"))
+        );
+        Query query = new Query(List.of("PATIENT_ID"), testAuthFilters, null, List.of(), ResultType.COUNT, null, null);
+        assertEquals(Set.of("consent1", "consent2", "consent4"), query.getUserConsents());
     }
 }
