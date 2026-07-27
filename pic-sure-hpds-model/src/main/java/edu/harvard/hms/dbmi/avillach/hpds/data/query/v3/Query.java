@@ -81,6 +81,7 @@ public record Query(
         return authorizationFilters().stream()
                 .filter(authorizationFilter -> CONSENTS_AUTHORIZATION_FILTER_NAME.equals(authorizationFilter.conceptPath()))
                 .map(AuthorizationFilter::values)
+                .filter(Objects::nonNull)
                 .flatMap(Collection::stream)
                 .collect(Collectors.toSet());
     }

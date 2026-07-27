@@ -124,6 +124,7 @@ public class QueryTest {
                 new AuthorizationFilter(CONSENTS_AUTHORIZATION_FILTER_NAME, Set.of("consent1", "consent2")),
                 new AuthorizationFilter("_not" + CONSENTS_AUTHORIZATION_FILTER_NAME, Set.of("consent3")),
                 new AuthorizationFilter(CONSENTS_AUTHORIZATION_FILTER_NAME, Set.of("consent2", "consent4")),
+                new AuthorizationFilter(CONSENTS_AUTHORIZATION_FILTER_NAME, null),
                 new AuthorizationFilter(null, Set.of("consent4", "consent5"))
         );
         Query query = new Query(List.of("PATIENT_ID"), testAuthFilters, null, List.of(), ResultType.COUNT, null, null);
